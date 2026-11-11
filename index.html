@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModoPromo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ========================= -->
+    <!-- PANTALLA 1 -->
+    <!-- ========================= -->
+
+    <section id="pantalla1" class="pantalla activa">
+        <header>
+            <img src="imagenes/logo.png" class="logo" alt="Logo">
+
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="fecha">
+                    DEL 1 DE JULIO AL 1 DE NOVIEMBRE
+                </div>
+                <img
+                    src="imagenes/titulo.png"
+                    class="titulo"
+                    alt="ModoPromo">
+                <div class="imagen-principal">
+                    <img
+                        src="imagenes/fondo.png"
+                        alt="Premio">
+                </div>
+                <button
+                    id="btnVermas"
+                    type="button"
+                    class="boton">
+                    Ver más
+                </button>
+            </section>
+        </main>
+    </section>
+
+
+    <!-- ========================= -->
+<!-- PANTALLA 2 -->
+<!-- ========================= -->
+
+<section id="pantalla2" class="pantalla">
+
+    <header>
+
+        <img src="imagenes/logo.png" class="logo" alt="Logo">
+
+    </header>
+
+    <main class="patrocinadores">
+        <h2>AUSPICIADORES</h2>
+
+        <div class="swiper patrocinadoresSwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="imagenes/anuncio1.png" alt="Anuncio 1">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="imagenes/anuncio2.png" alt="Anuncio 2">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="imagenes/anuncio3.png" alt="Anuncio 3">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="imagenes/anuncio4.png" alt="Anuncio 4">
+                </div>
+
+               
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <button 
+                    id="btnParticipar"
+                    type="button"
+                    class="boton">
+
+                    Participa aquí
+            </button>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+    <!-- ========================= -->
+    <!-- PANTALLA 3 -->
+    <!-- ========================= -->
+
+    <section id="pantalla3" class="pantalla">
+
+        <header>
+
+            <img
+                src="imagenes/logo.png"
+                class="logo"
+                alt="Logo">
+
+        </header>
+
+        <main class="formulario">
+
+            <h2>COMPLETA TUS DATOS</h2>
+
+            <form id="formRegistro">
+
+                <div class="campo">
+
+                    <label for="nombre">Nombres y Apellidos</label>
+
+                    <input
+                        id="nombre"
+                        type="text"
+                        placeholder="Ingrese sus nombres y apellidos">
+
+                    <small class="error"></small>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="dni">DNI</label>
+
+                    <input
+                        id="dni"
+                        type="text"
+                        maxlength="8"
+                        inputmode="numeric"
+                        placeholder="Ingrese su DNI">
+
+                    <small class="error"></small>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="fecha">Fecha de nacimiento</label>
+
+                    <input
+                        id="fecha"
+                        type="text"
+                        maxlength="10"
+                        inputmode="numeric"
+                        placeholder="DD/MM/AAAA">
+
+                    <small class="error"></small>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="correo">Correo electrónico</label>
+
+                    <input
+                        id="correo"
+                        type="email"
+                        placeholder="Ingrese su correo electrónico">
+
+                    <small class="error"></small>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="operador">Operador</label>
+
+                    <select id="operador">
+
+                        <option value="">Seleccione un operador</option>
+
+                        <option value="Bitel">Bitel</option>
+
+                        <option value="Claro">Claro</option>
+
+                        <option value="Entel">Entel</option>
+
+                        <option value="Movistar">Movistar</option>
+
+                    </select>
+
+                    <small class="error"></small>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="telefono">Número de teléfono</label>
+
+                    <input
+                        id="telefono"
+                        type="tel"
+                        maxlength="9"
+                        inputmode="numeric"
+                        placeholder=" ">
+
+                    <small class="error"></small>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="departamento">Departamento</label>
+
+                    <select id="departamento">
+
+                        <option value="">Seleccione su departamento</option>
+
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Áncash">Áncash</option>
+                        <option value="Apurímac">Apurímac</option>
+                        <option value="Arequipa">Arequipa</option>
+                        <option value="Ayacucho">Ayacucho</option>
+                        <option value="Cajamarca">Cajamarca</option>
+                        <option value="Cusco">Cusco</option>
+                        <option value="Huancavelica">Huancavelica</option>
+                        <option value="Huánuco">Huánuco</option>
+                        <option value="Ica">Ica</option>
+                        <option value="Junín">Junín</option>
+                        <option value="La Libertad">La Libertad</option>
+                        <option value="Lambayeque">Lambayeque</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Loreto">Loreto</option>
+                        <option value="Madre de Dios">Madre de Dios</option>
+                        <option value="Moquegua">Moquegua</option>
+                        <option value="Pasco">Pasco</option>
+                        <option value="Piura">Piura</option>
+                        <option value="Puno">Puno</option>
+                        <option value="San Martín">San Martín</option>
+                        <option value="Tacna">Tacna</option>
+                        <option value="Tumbes">Tumbes</option>
+                        <option value="Ucayali">Ucayali</option>
+
+                    </select>
+
+                    <small class="error"></small>
+
+                </div>
+
+                <button
+                    class="boton"
+                    type="submit">
+
+                    Comprobar
+
+                </button>
+
+            </form>
+
+        </main>
+
+    </section>
+        <!--====================================
+        MODAL
+        =====================================-->
+
+        <div id="modal">
+
+            <div class="modal-box">
+
+                <div class="loader">
+
+                    <div class="loader-ring"></div>
+
+                    <img src="imagenes/logo3.png" alt="Logo">
+
+                </div>
+
+                <h2 id="tituloModal">
+
+                    Comprobando...
+
+                </h2>
+
+                <p id="mensajeModal">
+
+                    Verificando tus datos.
+
+                </p>
+
+            </div>
+
+        </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
